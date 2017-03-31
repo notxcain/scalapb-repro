@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package repro.protobuf;
+
+option java_package = "repro.protobuf.msg";
+option optimize_for = SPEED;
+
+message Foo {
+    required Bar bar = 1;
+}
+
+enum Bar {
+    Baz = 1;
+}
